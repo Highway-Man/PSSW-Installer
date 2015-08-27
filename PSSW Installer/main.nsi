@@ -20,6 +20,8 @@ Var PROSINSTALLFOLDER
 Function .onInit
 	StrCpy $PROSINSTALLFOLDER '$PROGRAMFILES\PROS'
  FunctionEnd
+ 
+!define MUI_ICON '${NSISDIR}\Contrib\Graphics\Icons\modern-install-colorful.ico'
 
 !define MUI_PAGE_HEADER_TEXT 'PROS Sensors Setup Wizard'
 !define MUI_FINISHPAGE_NOAUTOCLOSE
