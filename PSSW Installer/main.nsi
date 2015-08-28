@@ -73,6 +73,13 @@ InstallDir '$DESKTOP'
 
 RequestExecutionLevel highest
 
+VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "PROS Sensors Setup Wizard"
+VIAddVersionKey /LANG=${LANG_ENGLISH} "CompanyName" "Highwayman"
+VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "© Jacob Knaup"
+VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "PROS plugin"
+VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "1.0.2"
+VIProductVersion "1.0.2.0"
+
 # default section start
 Section
 
