@@ -76,7 +76,7 @@ RequestExecutionLevel highest
 # default section start
 Section
 
-Delete "'$ProsInstallFolder\dropins\tk.Knaup.prosSensorsSetupWizard_1.0.1'"
+Delete $ProsInstallFolder\dropins\*
 
 # change output path to PROS dropins folder
 SetOutPath '$ProsInstallFolder\dropins'
