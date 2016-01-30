@@ -18,7 +18,7 @@
 
 Var PROSINSTALLFOLDER
 Function .onInit
-	StrCpy $PROSINSTALLFOLDER '$PROGRAMFILES\PROS'
+	StrCpy $PROSINSTALLFOLDER '$PROGRAMFILES64\PROS'
  FunctionEnd
  
 !define MUI_ICON '${NSISDIR}\Contrib\Graphics\Icons\modern-install-colorful.ico'
@@ -44,7 +44,7 @@ Function .onInit
 
 !define MUI_FINISHPAGE_TITLE 'PROS Sensors Setup Wizard Successfully Installed'
 !define MUI_FINISHPAGE_TEXT 'To complete the installation of the PSSW launch PROS as administrator'
-!define MUI_FINISHPAGE_RUN '$PROSINSTALLFOLDER\ccide.exe'
+!define MUI_FINISHPAGE_RUN '$PROSINSTALLFOLDER\pros.exe'
 !define MUI_FINISHPAGE_RUN_TEXT 'Launch PROS as administrator'
 !define MUI_FINISHPAGE_RUN_PARAMETERS 'Run as administrator'
 !define MUI_FINISHPAGE_LINK 'README'
@@ -106,7 +106,7 @@ Section "Uninstall"
 SetOutPath '$PROFILE'
  
 # Always delete uninstaller first
-Delete "'$ProsInstallFolder\PSSW Uninstaller.exe'"
+Delete '$ProsInstallFolder\PSSW Uninstaller.exe'
 
 # remove the plugin
 Delete '$ProsInstallFolder\dropins\tk.Knaup.prosSensorsSetupWizard_1.0.2'
